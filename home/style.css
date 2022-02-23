@@ -1,0 +1,21 @@
+body { 
+    background-color: violet;
+	background-size: cover;
+	background-repeat: no-repeat;
+ }
+
+
+.main {
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-duration: 3s;
+	animation-name: slidein2;
+}
+
+
+#rickvideo {
+	margin: auto;
+}

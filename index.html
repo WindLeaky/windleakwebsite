@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <title>WindLeak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/bild.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Sora:wght@200&display=swap" rel="stylesheet">
+   </head>
+
+  <body>
+<div class="nav">
+	<a class="nav1" href="https://solo.to/leon">Home</a>
+	<a class="nav2" href="#aboutme">About me</a>
+	<a class="nav3" href="https://solo.to/leon">Portfolio</a>
+	<a class = "nav4" href="https://solo.to/leon">Offers</a>
+</div>
+  <div class="main">
+    <h1>WindLeak</h1>
+	<img id="bild" src="/images/bild.png" width="250px" height="250px">
+  </div>
+  <div id="container">
+    <div id="text"></div><div id="cursor"></div><div id="textneben">-Developer</div>
+  </div>
+  <div class="socials">
+	<h3>Visit all my socials with one link:</h3>
+	<button class="buttonsocials" onclick="location.href='https://solo.to/leon'" type="button">
+	  <img id="py"src="/images/soloto.png" width="50px" height="30px">
+	  solo.to/leon
+	</button>
+</div>
+  <div class="about">
+	  <h3 id="aboutme">About me</h3>
+
+	  <button id="abouttext" type="button">
+		<img id="py"src="/images/wavehand.png" width="50px" height="50px">
+		Hey! I'm a german guy who loves developing things.
+		<br>
+		And domains.
+	  </br> 
+		I'm about to study Biology 
+		<br>
+		at the TUM in 2 years.
+	</br> 
+	  </button>
+  </div>
+
+<div class="playlist">
+        <h1 id="aboutme" style="text-align: center; font-family: 'Mochiy Pop P One', sans-serif; margin-top: 5px;">Playlist</h1>
+        <iframe src="https://open.spotify.com/embed/playlist/3Jc0DlVjYgLSsamQBolj76?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
+  <div id="rick">
+	  <img id="pfeil" src="/images/pfeil.png">
+	  <h1 >Btw click here</h1>
+	  <a href="/L"><img id="rickimg" src="/images/rick.jpg">
+  </div>
+<script>
+  // List of sentences
+var _CONTENT = [ 
+	"Web", 
+	"Html",
+	"Css",
+	"Css(Sass)",
+	"Css(Scss)",
+	"Python",
+	"Cool",
+	"German"
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+</script>
+
+
+<script>
+	function myFunction() {
+var x = document.getElementById("abouttext");
+var d = document.getElementById("abouthidebutton")
+if (x.style.display === "none") {
+x.style.display = "inline-block";
+d.src = "menuclose.png";
+} else {
+x.style.display = "none";
+d.src = "menuopen.png"
+}
+}
+
+
+
+</script>
+
+
+<script>
+function myFunction2() {
+var x = document.getElementById("project1");
+var y = document.getElementById("project2");
+var z = document.getElementById("project3");
+var a = document.getElementById("project4");
+var b = document.getElementById("project5");
+var c = document.getElementById("project6");
+if (x.style.display === "none") {
+x.style.display = "inline-block";
+} else {
+x.style.display = "none";
+}
+
+
+if (y.style.display === "none") {
+y.style.display = "inline-block";
+} else {
+y.style.display = "none";
+}
+
+if (z.style.display === "none") {
+z.style.display = "inline-block";
+} else {
+z.style.display = "none";
+}
+
+if (a.style.display === "none") {
+a.style.display = "inline-block";
+} else {
+a.style.display = "none";
+}
+
+if (b.style.display === "none") {
+b.style.display = "inline-block";
+} else {
+b.style.display = "none";
+}
+
+if (c.style.display === "none") {
+c.style.display = "inline-block";
+} else {
+c.style.display = "none";
+}
+}
+</script>
+
+
+<script>
+function myFunction3() {
+var x = document.getElementById("offer1");
+var y = document.getElementById("offer2");
+var z = document.getElementById("offer3");
+var a = document.getElementById("offer4");
+var b = document.getElementById("offer5");
+var c = document.getElementById("offer6");
+
+
+if (x.style.display === "none") {
+x.style.display = "inline-block";
+} else {
+x.style.display = "none";
+}
+
+if (y.style.display === "none") {
+y.style.display = "inline-block";
+} else {
+y.style.display = "none";
+}
+
+if (z.style.display === "none") {
+z.style.display = "inline-block";
+} else {
+z.style.display = "none";
+}
+
+if (a.style.display === "none") {
+a.style.display = "inline-block";
+} else {
+a.style.display = "none";
+}
+
+if (b.style.display === "none") {
+b.style.display = "inline-block";
+} else {
+b.style.display = "none";
+}
+
+if (c.style.display === "none") {
+c.style.display = "inline-block";
+} else {
+c.style.display = "none";
+}
+}
+
+
+
+</script>
+
+  </body>

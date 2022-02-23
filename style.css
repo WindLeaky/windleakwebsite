@@ -1,0 +1,530 @@
+body { 
+    background-color: violet;
+	background-size: cover;
+	background-repeat: no-repeat;
+ }
+
+
+.main {
+    text-align: center;
+    color: black;
+	margin-top: 50px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-duration: 3s;
+	animation-name: slidein2;
+}
+
+.socials {
+	text-align: center;
+    color: black;
+    margin-top: 120px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-duration: 3s;
+	animation-name: slidein2;
+}
+
+#container {
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #111;
+	letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+	animation-duration: 3s;
+	animation-name: slidein;
+	background-color: rgba(255, 255, 255, 0.8);
+	
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 25px;
+	background-color: blueviolet;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: transparent; 
+	}
+}
+
+@keyframes slidein {
+	from {
+	  font-size: 5px;
+	}
+  
+	
+  
+	to {
+	  font-size: 1.2rem;
+	}
+  }
+
+  @keyframes slidein2 {
+	from {
+		font-size: 5px;
+	}
+  
+	
+  
+	to {
+	  font-size: 2rem;
+	}
+  }
+
+@keyframes slidein3 {
+	from {
+		width: 50px;
+		height: 50px;
+	}
+
+	to {
+		width: 250px;
+		height: 250px;
+	}
+	
+}
+#bild {
+	margin-bottom: 20px;
+	animation-name: slidein3;
+	animation-duration: 3s;
+}
+
+#textneben {
+	font-size: 1.2rem;
+	animation-duration: 3s;
+	animation-name: slidein;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	letter-spacing: 2px;
+	vertical-align: middle;	
+}
+
+#rick {
+	text-align: center;
+    color: black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.5rem;
+	animation-duration: 3s;
+	animation-name: slideinrick;
+	margin-top: 50px;
+}
+
+#rickimg {
+	margin-top: 1px;
+	animation-name: slideinrickimg;
+	animation-duration: 3s;
+}
+
+@keyframes slideinrick {
+	from {
+		margin-left: 1500px;
+	}
+  
+	
+  
+	to {
+	  margin-left: 1px;
+	}
+  }
+
+  @keyframes slideinrickimg {
+	from {
+		margin-right: 120px;
+	}
+  
+	
+  
+	to {
+	  margin-left: 1px;
+	}
+  }
+
+  .buttonsocials
+  {
+	  background-color: transparent;
+	  color: black;
+	  border-color: transparent;
+	  height: 65px;
+	  width: 150px;
+	  font-size: 1rem;
+	  border-radius: 10px;
+	  font-family: 'Mochiy Pop P One', sans-serif;
+  }
+  
+  .buttonsocials:hover {
+	color: rgba(255, 255, 255, 0.8);
+  }
+
+  .socials span{
+	  background-color: tomato;
+	  color: #000;
+  }
+
+.about{
+	text-align: center;
+    color: black;
+    margin-top: 200px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-name: about;
+	animation-duration: 3s;
+}
+
+@keyframes about {
+	from {
+		margin-top: 500px;
+	}
+  
+	
+  
+	to {
+		margin-top: 200px;
+	}
+  }
+
+  @keyframes about2 {
+	from {
+		margin-top: 500px;
+	}
+  
+	
+  
+	to {
+		margin-top: 10px;
+	}
+  }  
+
+#abouttext{
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: about2;
+	animation-duration: 3s;
+}
+
+.projects {
+	text-align: center;
+    color: black;
+    margin-top: 200px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-name: about;
+	animation-duration: 3s;
+}
+
+
+
+#aussendiv {
+	display:flex;
+	justify-content:center;
+}
+
+#project1 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#project2 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#project3 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+@keyframes project1 {
+	from {
+		margin-top:1000px;
+	}
+  
+	
+  
+	to {
+		margin-top: 10px;
+	}
+  }  
+
+#project4 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#project5 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#project6 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+.offers {
+	text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+	animation-name: offers;
+	animation-duration: 3s;
+}
+
+@keyframes offers {
+	from {
+		margin-top:1000px;
+	}
+  
+	
+  
+	to {
+		margin-top: 20px;
+	}
+  }  
+
+#offer1 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#offer2 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#offer3 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#offer4 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#offer5 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#offer6 {
+
+	background-color: rgba(255, 255, 255, 0.8);;
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+    height: 180px;
+    width: 350px;
+    font-size: 1rem;
+    border-radius: 25px;
+	margin-top: 10px;
+	animation-name: project1;
+	animation-duration: 3s;
+	display: none;
+}
+
+#abouthidebutton{
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	background-color: transparent;
+	font-size: 2rem;
+}
+
+#projectshidebutton {
+	color: #111;
+    border-color: transparent;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	background-color: transparent;
+	font-size: 2rem;
+}
+
+#footer {
+	font-size: 0.7rem;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+.nav {
+	text-align:right;
+	font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.nav1 {
+	border-bottom: 3px solid #000;
+	text-decoration: none;
+	color: black;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-right: 10px;
+}
+
+.nav2 {
+	color: black;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.nav2:hover {
+	border-bottom: 3px solid #000;
+}
+.nav3 {
+	color: black;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.nav3:hover {
+	border-bottom: 3px solid #000;
+}
+.nav4 {
+	color: black;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	text-decoration: none;
+	margin-right: 25px;
+}
+.nav4:hover {
+	border-bottom: 3px solid #000;
+}  
